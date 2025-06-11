@@ -466,15 +466,6 @@ updateErr: this.updateErr,
 <Route exact path="/register" component={Register} />
 <Route component={NotFound} />
 </HistoryContext.Provider>
-updateName: this.updateName,
-updateTopic: this.updateTopic,
-registerErr,
-updateErr: this.updateErr,
-}}
-<Route exact path="/" component=(Home} />
-<Route exact path="/register" component=(Register) />
-<Route component={NotFound} />
-</HistoryContext.Provider>
 </Switch>
 )
 }
