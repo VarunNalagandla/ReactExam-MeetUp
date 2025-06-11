@@ -454,7 +454,7 @@ return (
 <HistoryContext.Provider
 value={{
 isRegister,
-changeRegistrationStatus: this.changeRegistrationSta
+changeRegistrationStatus: this.changeRegistrationStatus,
 name,
 topic,
 updateName: this.updateName,
