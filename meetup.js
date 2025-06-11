@@ -46,7 +46,7 @@ const Home = props => {
         <BeforeRegisBtn onClick={onClickRegister}>Register</BeforeRegisBtn>
       </Link>
       <BeforeRegisImg
-        src="https://assets.cchp.in/frontend/react-js/meetup/meetup-img.png"
+        src="https://assets.ccbp.in/frontend/react-js/meetup/meetup-img.png"
         alt="meetup"
       />
     </>
