@@ -430,7 +430,55 @@ name: '',
 topic: 'Arts and Culture',
 registerErr: false,
 }
-changeRegistrationStatus=()=> {
 
+changeRegistrationStatus=()=> {
+this.setState({isRegister: true})
+}
+
+updateName = updateName => {
+this.setState({name: updateName})
+}
+
+updateTopic = updateTopic => {
+this.setState({topic: updateTopic})
+}
+
+updateErr = response => {
+this.setState({registerErr: response})
+}
+
+render() {
+const {isRegister, name, topic, registerErr} = this.state
+return (
+<Switch>
+<HistoryContext.Provider
+value={{
+isRegister,
+changeRegistrationStatus: this.changeRegistrationSta
+name,
+topic,
+updateName: this.updateName,
+updateTopic: this.updateTopic,
+registerErr,
+updateErr: this.updateErr,
+}}
+<Route exact path="/" component={Home} />
+<Route exact path="/register" component={Register} />
+<Route component={NotFound} />
+</HistoryContext.Provider>
+updateName: this.updateName,
+updateTopic: this.updateTopic,
+registerErr,
+updateErr: this.updateErr,
+}}
+<Route exact path="/" component=(Home} />
+<Route exact path="/register" component=(Register) />
+<Route component={NotFound} />
+</HistoryContext.Provider>
+</Switch>
+)
+}
+}
+export default App
 
 
